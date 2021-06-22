@@ -1,12 +1,14 @@
 const Eris = require("eris");
+require('dotenv').config();
 
-const bot = new Eris("BOT_TOKEN");
-bot.on("ready", () => {
+const client = new Eris(process.env.TOKEN);
+client.on("ready", () => {
   console.log("Ready!");
 });
-bot.on("messageCreate", (msg) => {
-  if(msg.content === "!ping") {
-    bot.createMessage(msg.channel.id, "Pong!");
+
+client.on("messageCreate", async (message) => {
+  if(message.content === "!ping") {
+    bot.createMessage(message.channel.id, "Pong!");
   }
 });
-bot.connect();
+client.connect();
