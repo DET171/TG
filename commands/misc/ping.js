@@ -1,9 +1,5 @@
-module.exports = {
-	name: 'ping',
-	description: 'Ping!',
-	args: false,
-	cooldown: 10,
-	execute(message, bot) {
-		bot.createMessage(message.channel.id, 'Pong!');
-	},
-};
+const { Command } = require('yuuko');
+
+module.exports = new Command('ping', message => {
+	message.channel.createMessage('Pog');
+});
