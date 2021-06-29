@@ -3,7 +3,6 @@ module.exports = new Command('morse', (message, args) => {
 	let str = args.slice(1).join(' ');
 	str = ` ${str}`;
 	str = str.toLowerCase().replace(/\W/, '');
-	console.log(str);
 	const morseCode = {
 		'A': '.-',
 		'B': '-...',
@@ -87,7 +86,6 @@ module.exports = new Command('morse', (message, args) => {
 	}
 	if(args[0] == 'encode') {
 		message.channel.createMessage(convertToMorse(str));
-		console.log(convertToStr(convertToMorse(str)));
 	}
 	if(args[0] == 'decode') {
 		message.channel.createMessage(convertToStr(str));
