@@ -9,7 +9,9 @@ const bot = new Client({
 bot.extendContext({
 	placeholder: 'This is a placeholder',
 });
-
+bot.on('error', (err) => {
+	console.error(err);
+});
 
 bot
 	.addDir(path.join(__dirname, 'commands'))
@@ -23,5 +25,3 @@ module.exports = new Command('test', (message, args, context) => {
 
 });
 */
-const list = require('./list.json');
-console.log(list.list[1].cal);

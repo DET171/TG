@@ -2,25 +2,34 @@ const { Command } = require('yuuko');
 require('dotenv').config();
 
 module.exports = new Command('help', async (message, args, context) => {
-	context.client.createMessage(message.channel.id, {
-		embed: {
-			title: 'Help Menu',
-			description: 'Here are some commands you can use:',
-			fields: [
-				{
-					name: 'Encode (id: `encode`)',
-					value: 'Encodes a string into Base64.',
-					inline: false,
-				},
-				{
-					name: 'Decode (id: `decode`)',
-					value: 'Decodes a Base64 string.',
-					inline: false,
-				},
-			],
-			footer: {
-				text: `e.g. ${process.env.PREFIX} <command>`,
+	if(!args.length) {
+		context.client.createMessage(message.channel.id, {
+			embed: {
+				title: 'Help Menu',
+				description: `Here are some categories (type the corresponding number to view the categories e.g. \`${process.env.PREFIX}help 1\`):`,
+				fields: [
+					{
+						name: '1) Utilities',
+						value: 'Helpful commands. Since when was I helpful?',
+						inline: false,
+					},
+				],
 			},
-		},
-	});
+		});
+	}
+	if(args[0] == '1') {
+		context.client.createMessage(message.channel.id, {
+			embed: {
+				title: 'Help `Utilities`',
+				description: 'Here are some commands you can use:',
+				fields: [
+					{
+						name: 'Commands',
+						value: '`encode64`/`decode64`/`morse`/`translate`',
+						inline: false,
+					},
+				],
+			},
+		});
+	}
 });
