@@ -13,33 +13,33 @@ module.exports = new Command('list', async (message, args, context) => {
 					{
 						name: 'Name',
 						value: result.name,
-						inline: false,
+						inline: true,
 					},
 					{
 						name: 'Caliber',
 						value: result.cal,
-						inline: false,
+						inline: true,
 					},
 					{
 						name: 'Damage',
 						value: result.dmg,
-						inline: false,
+						inline: true,
 					}, {
 						name: 'Capacity',
 						value: result.cap,
-						inline: false,
+						inline: true,
 					}, {
 						name: 'Rate of Fire',
 						value: result.rpm,
-						inline: false,
+						inline: true,
 					}, {
 						name: 'Range (studs)',
 						value: result.r,
-						inline: false,
+						inline: true,
 					}, {
 						name: 'Damage Multiplier (Head/Torso)',
 						value: result.multi,
-						inline: false,
+						inline: true,
 					}, {
 						name: 'Description',
 						value: result.desc,
@@ -55,6 +55,6 @@ module.exports = new Command('list', async (message, args, context) => {
 	}
 	catch(err) {
 		console.error(err);
-		message.channel.createMessage('Hmm...there was a problem executing that command!');
+		message.channel.createMessage('Hmm...there was a problem executing that command! \nError: ' + err.message);
 	}
 });
