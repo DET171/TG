@@ -9,6 +9,7 @@ const bot = new Client({
 bot.extendContext({
 	placeholder: 'This is a placeholder',
 });
+bot.editStatus('dnd');
 bot.on('error', (err) => {
 	console.error(err);
 });
