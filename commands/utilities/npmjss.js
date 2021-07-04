@@ -6,7 +6,7 @@ const { Command } = require('yuuko');
 module.exports = new Command('npmss', async (message, args, context) => {
 	if (!args.length) return message.channel.createMessage(`Hey <@${message.author.id}> you need to search something!`);
 
-	got(`http://registry.npmjs.com/-/v1/search?text=${args.join()}&size=10`).then((obj) => {
+	got(`http://registry.npmjs.com/-/v1/search?text=${args.join()}&size=20`).then((obj) => {
 		obj = JSON.parse(obj.body);
 		obj = obj.objects;
 		context.client.createMessage(message.channel.id, {
