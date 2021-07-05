@@ -13,6 +13,11 @@ module.exports = new Command('help', async (message, args, context) => {
 						value: 'Helpful commands. Since when was I helpful?',
 						inline: false,
 					},
+					{
+						name: '2) Fun',
+						value: 'Fun commands!',
+						inline: false,
+					},
 				],
 			},
 		});
@@ -25,7 +30,22 @@ module.exports = new Command('help', async (message, args, context) => {
 				fields: [
 					{
 						name: 'Commands',
-						value: '`encode64`/`decode64`/`morse`/`translate`',
+						value: '`encode64`/`decode64`/`morse`/`translate`/`npm`/`npmss`/`repo`/`npms`',
+						inline: false,
+					},
+				],
+			},
+		});
+	}
+	if(args[0] == '2') {
+		context.client.createMessage(message.channel.id, {
+			embed: {
+				title: 'Help `Fun`',
+				description: 'Here are some commands you can use:',
+				fields: [
+					{
+						name: 'Commands',
+						value: '`chat`',
 						inline: false,
 					},
 				],

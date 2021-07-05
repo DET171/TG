@@ -19,7 +19,6 @@ bot
 	.addDir(path.join(__dirname, 'events'))
 	.connect();
 
-
 /*
 const { Command } = require('yuuko');
 module.exports = new Command('test', (message, args, context) => {

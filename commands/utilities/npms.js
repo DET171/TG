@@ -12,7 +12,7 @@ module.exports = new Command('npms', async (message, args, context) => {
 		x = x - 1;
 		context.client.createMessage(message.channel.id, {
 			embed: {
-				title: 'NPM Search Results',
+				title: 'NPMS.io Search Results',
 				description: '',
 				color: 0x008000,
 				fields: [
