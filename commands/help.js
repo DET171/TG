@@ -52,4 +52,6 @@ module.exports = new Command('help', async (message, args, context) => {
 			},
 		});
 	}
+}, {
+	guildOnly: true,
 });
