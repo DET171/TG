@@ -24,7 +24,7 @@ bot.on('messageCreate', async (message) => {
 		try {
 			const text = message.content.replace(/^<@!?[0-9]{1,20}> ?/i, '');
 			bot.sendChannelTyping(message.channel.id);
-			var reply = await got(`http://api.brainshop.ai/get?bid=${env.bid}&key=${env.key}&uid=${env.bid}&msg=${text}`);
+			var reply = await got(`http://api.brainshop.ai/get?bid=${env.bid}&key=${env.key}&uid=${message.author.id}&msg=${text}`);
 			reply = JSON.parse(reply.body);
 			if (reply) {
 				await message.channel.createMessage(reply.cnt);
