@@ -30,7 +30,7 @@ module.exports = new Command('help', async (message, args, context) => {
 				fields: [
 					{
 						name: 'Commands',
-						value: '`encode64`/`decode64`/`morse`/`translate`/`npm`/`npmss`/`repo`/`npms`',
+						value: '`encode64`/`decode64`/`morse`/`npm`/`npmss`/`repo`/`npms`',
 						inline: false,
 					},
 				],
