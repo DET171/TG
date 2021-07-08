@@ -6,12 +6,13 @@
     "yuuko": "^2.3.0-pre2"
   },
   "name": "tg",
-  "version": "0.7.2",
+  "version": "1.7.3-beta0.2",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "prod": "pm2 start index.js"
+    "prod": "pm2 start index.js",
+    "lint": "eslint --fix ."
   },
   "author": "",
   "license": "MIT",
@@ -29,7 +30,6 @@
     "nodemon": "^2.0.9"
   },
   "optionalDependencies": {
-    "nodemon": "^2.0.9",
     "pm2": "^5.1.0"
   }
 }
