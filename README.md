@@ -7,10 +7,11 @@
   ## Table of Contents
 
   - [Description](#description)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Tests](#tests)
-  - [Questions](#questions)
+  - [Install](#installation)
+  - [Usage (Production)](#usage-production)
+  - [Usage (Development)](#usage-development)
+  - [Bugs and Issues](#bugs-and-issues)
+  - [Pull Requests](#pull-requests)
   - [Credits](#credits)
   - [License](#license)
 
@@ -37,10 +38,12 @@
   npm run dev
   ```
 
-  ## Questions
+  ## Bugs and Issues
 
   Go to [https://github.com/DET171/TG/issues](https://github.com/DET171/TG/issues)
 
+  ## Pull Requests
+  Go to [https://github.com/DET171/TG/pulls](https://github.com/DET171/TG/pulls)
   ## Credits
 
   [@DET171](https://github.com/DET171)
