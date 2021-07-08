@@ -19,6 +19,8 @@
   ```bash
   git clone https://github.com/DET171/TG
   ```
+  After that, rename `.example.env` to `.env`.
+  Fill in your bot token, bot prefix, and get the `key` and `bid` at [Brainshop.ai](https://brainshop.ai/user/register)
   ## Usage (Production)
   Install the dependencies:
   ```bash
