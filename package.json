@@ -6,7 +6,7 @@
     "yuuko": "^2.3.0-pre2"
   },
   "name": "tg",
-  "version": "1.7.3-beta0.2",
+  "version": "1.7.4",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
