@@ -1,6 +1,7 @@
 const { Client } = require('yuuko');
 const path = require('path');
 const dotenv = require('dotenv');
+const express = require('express');
 const got = require('got');
 var env = dotenv.config();
 env = process.env;
@@ -48,3 +49,13 @@ module.exports = new Command('test', (message, args, context) => {
 
 });
 */
+const app = express();
+const port = process.env.PORT || 8080;
+
+// eslint-disable-next-line
+app.get('/', function(req, res) {
+	res.sendFile(path.join(__dirname, '/index.html'));
+});
+
+app.listen(port);
+console.log('Server started at http://localhost:' + port);
