@@ -2,6 +2,9 @@ const { Command } = require('yuuko');
 const moment = require('moment');
 
 module.exports = new Command('whois', (message, args, context) => { // eslint-disable-line no-unused-vars
+	if (!args[0]) {
+		return message.channel.createMessage(`${message.author.mention}, apologies! Please specify a particular member!`);
+	}
 	var objToday = new Date(),
 		weekday = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'),
 		dayOfWeek = weekday[objToday.getDay()],
@@ -18,9 +21,6 @@ module.exports = new Command('whois', (message, args, context) => { // eslint-di
 	const user = message.mentions[0];
 	const guild = message.channel.guild;
 	const member = guild.members.get(user.id);
-	if (!args[0]) {
-		return message.reply('Apologies! Please specify a particular member!');
-	}
 	message.channel.createMessage({
 		embed: {
 			title: `User information for ${user.username}#${user.discriminator}`,
