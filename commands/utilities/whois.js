@@ -21,12 +21,6 @@ module.exports = new Command('whois', (message, args, context) => { // eslint-di
 	if (!args[0]) {
 		return message.reply('Apologies! Please specify a particular member!');
 	}
-	/*
-		embed.addField(
-			'Joined server at:',
-			`${moment.utc(user.joinedAt).format('MMMM, Do YYYY, h:mm:ss a')}`,
-		);
-    */
 	message.channel.createMessage({
 		embed: {
 			title: `User information for ${user.username}#${user.discriminator}`,
