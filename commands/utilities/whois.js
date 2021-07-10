@@ -18,7 +18,6 @@ module.exports = new Command('whois', (message, args, context) => { // eslint-di
 	const user = message.mentions[0];
 	const guild = message.channel.guild;
 	const member = guild.members.get(user.id);
-	console.log(member);
 	if (!args[0]) {
 		return message.reply('Apologies! Please specify a particular member!');
 	}
@@ -53,11 +52,6 @@ module.exports = new Command('whois', (message, args, context) => { // eslint-di
 				},
 				{
 					name: 'Joined server at:',
-					value: `${moment.utc(member.joinedAt).format('MMMM, Do YYYY, h:mm:ss a')}`,
-					inline: false,
-				},
-				{
-					name: 'Current server permissions:',
 					value: `${moment.utc(member.joinedAt).format('MMMM, Do YYYY, h:mm:ss a')}`,
 					inline: false,
 				},
