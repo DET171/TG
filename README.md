@@ -2,7 +2,8 @@
 [![](https://img.shields.io/github/issues/DET171/TG?style=flat-square&logo=github)](https://github.com/DET171/TG/issues)
 [![](https://img.shields.io/github/forks/DET171/TG?style=flat-square&logo=github)](https://github.com/DET171/TG/)
 [![](https://img.shields.io/github/contributors/DET171/TG?style=flat-square&logo=github)](https://github.com/DET171/TG/graphs/contributors)
-
+![GitHub all releases](https://img.shields.io/github/downloads/DET171/TG/total?style=flat-square)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/DET171/TG/master?style=flat-square&logo=github)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&logo=github)](http://MIT.org/)
   ## Description
 
@@ -11,6 +12,7 @@
   ## Table of Contents
 
   - [Description](#description)
+  - [Prerequisites](#prerequisites)
   - [Install](#installation)
   - [Usage (Production)](#usage-production)
   - [Usage (Development)](#usage-development)
@@ -18,6 +20,9 @@
   - [Pull Requests](#pull-requests)
   - [Credits](#credits)
   - [License](#license)
+
+  ## Prerequisites
+  ![node-current](https://img.shields.io/node/v/eris?style=flat-square)
 
   ## Installation
   ```bash
