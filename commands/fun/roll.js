@@ -17,7 +17,7 @@ module.exports = new Command(['roll', 'rolladie', 'rolladice'], (message, args) 
 		try {
 			const num = arg.trim().split('d');
 			const times = parseInt(num[0]);
-			const max = parseInt(num[1]);
+			const max = parseInt(num[1]) || 6;
 			const nums = [];
 			for(let i = 0; i < times; i++) {
 				let result = Math.floor(Math.random() * max); // eslint-disable-line prefer-const
