@@ -5,21 +5,27 @@ const express = require('express');
 const got = require('got');
 var env = dotenv.config();
 env = process.env;
+
 const bot = new Client({
 	token: env.TOKEN,
 	prefix: env.PREFIX,
 	ignoreBots: true,
 });
+
 bot.extendContext({
 	placeholder: 'This is a placeholder',
 });
+
 bot.editStatus('dnd');
+
 bot.on('error', (err) => {
 	console.error(err);
 });
+
 bot.globalCommandRequirements = {
 	guildOnly: true,
 };
+
 bot.on('messageCreate', async (message) => {
 	if (message.guildID == undefined && message.author.id != bot.user.id) {
 		try {
