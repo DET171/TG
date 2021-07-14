@@ -1,10 +1,12 @@
 # A Simple Discord Bot
 [![](https://img.shields.io/github/issues/DET171/TG?style=flat-square&logo=github)](https://github.com/DET171/TG/issues)
 [![](https://img.shields.io/github/forks/DET171/TG?style=flat-square&logo=github)](https://github.com/DET171/TG/)
+[![](https://img.shields.io/github/contributors/DET171/TG?style=flat-square&logo=github)](https://github.com/DET171/TG/graphs/contributors)
+
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&logo=github)](http://MIT.org/)
   ## Description
 
-  The bot is written using Yuuko and Eris.
+  The bot is written using [Yuuko](https://github.com/eritbh/yuuko) and [Eris](https://github.com/abalabahaha/eris).
 
   ## Table of Contents
 
