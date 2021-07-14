@@ -5,7 +5,7 @@
 [![](https://img.shields.io/codeclimate/maintainability-percentage/DET171/TG?style=flat-square&logo=github)](https://github.com/DET171/TG/)
 [![](https://img.shields.io/codeclimate/tech-debt/DET171/TG?style=flat-square&logo=github)](https://github.com/DET171/TG/)
 [![](https://img.shields.io/github/contributors/DET171/TG?style=flat-square&logo=github)](https://github.com/DET171/TG/graphs/contributors)
-[![](https://img.shields.io/codeclimate/issues/DET171/TG?style=flat-square&logo=github)](https://github.com/DET171/TG/graphs/contributors)
+[![](https://img.shields.io/codeclimate/issues/DET171/TG?style=flat-square&logo=github)](https://github.com/DET171/TG/)
 [![](https://img.shields.io/github/downloads/DET171/TG/total?style=flat-square&logo=github)](https://github.com/DET171/TG/)
 [![](https://img.shields.io/github/checks-status/DET171/TG/master?style=flat-square&logo=github)](https://github.com/DET171/TG/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&logo=github)](http://MIT.org/)
@@ -26,7 +26,7 @@
   - [License](#license)
 
   ## Prerequisites
-  ![node-current](https://img.shields.io/node/v/eris?style=flat-square)
+  [![](https://img.shields.io/node/v/eris?style=flat-square)](https://github.com/DET171/TG/)
 
   ## Installation
   ```bash
