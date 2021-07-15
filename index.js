@@ -60,7 +60,7 @@ const port = process.env.PORT || 8080;
 
 // eslint-disable-next-line
 app.get('/', function(req, res) {
-	res.sendFile(path.join(__dirname, '/index.html'));
+	res.sendFile(path.join(__dirname, '/up.html'));
 });
 
 app.listen(port);
