@@ -14,7 +14,7 @@
     "dev": "nodemon index.js",
     "prod": "pm2 start index.js",
     "lint": "eslint --fix .",
-    "test": "npm run lint"
+    "test": "npm run lint && npm start"
   },
   "author": "",
   "license": "MIT",

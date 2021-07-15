@@ -26,7 +26,8 @@
   - [License](#license)
 
   ## Prerequisites
-  [![](https://img.shields.io/node/v/eris?style=flat-square)](https://github.com/DET171/TG/)
+  Node.js >= `16.3.0`  
+  NPM >= `7.19.0`
 
   ## Installation
   ```bash
