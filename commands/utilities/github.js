@@ -17,7 +17,7 @@ module.exports = new Command('repo', async (message, args, context) => {
 		for (let i = 0; i < repeat; i++) {
 			let result = {
 				name: `${i+1}) ${items[i].name} (${items[i].full_name})`,
-				value: `${items[i].description}\nLanguage: ${items[i].language}\nOwner: [${items[i].owner.login}](${items[i].owner.url})\nBranch: ${items[i].default_branch}\nLicense: [${items[i].license.name}](${items[i].license.url})\n[Repository Link](${items[i].html_url})\n[Homepage](${items[i].homepage})`,
+				value: `${items[i].description}\nLanguage: ${items[i].language}\nOwner: [${items[i].owner.login}](${items[i].owner.url})\nBranch: ${items[i].default_branch}\n[Repository Link](${items[i].html_url})\n[Homepage](${items[i].homepage})`,
 				inline: true,
 			};
 			field.push(result);
