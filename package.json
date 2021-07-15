@@ -32,7 +32,9 @@
     "nodemon": "^2.0.12"
   },
   "optionalDependencies": {
-    "pm2": "^5.1.0"
+    "bufferutil": "^4.0.3",
+    "pm2": "^5.1.0",
+    "zlib-sync": "^0.1.7"
   },
   "engines": {
     "node": ">=16.3.0",

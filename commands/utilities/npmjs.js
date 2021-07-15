@@ -6,7 +6,7 @@ const { Command } = require('yuuko');
 module.exports = new Command('npm', async (message, args, context) => {
 	if (!args.length) return message.channel.createMessage(`Hey <@${message.author.id}> you need to search something!`);
 	try {
-		var obj = await got(`http://registry.npmjs.com/-/v1/search?text=${args.slice(0).join(' ')}&size=15`);
+		var obj = await got(`http://registry.npmjs.com/-/v1/search?text=${args.slice(0).join(' ')}&size=16`);
 		const field = [];
 		obj = JSON.parse(obj.body);
 		obj = obj.objects;
@@ -14,7 +14,7 @@ module.exports = new Command('npm', async (message, args, context) => {
 			let result = {
 				name: `${i+1}) ${obj[i].package.name}`,
 				value: `\`v${obj[i].package.version}\`\nScope: ${obj[i].package.scope}\n${obj[i].package.description}\nDate: ${obj[i].package.date}\n[NPM](${obj[i].package.links.npm})\n[Homepage](${obj[i].package.links.homepage})\n[Repository](${obj[i].package.links.repository})\n[Bugs/Issues](${obj[i].package.links.bugs})`,
-				inline: false,
+				inline: true,
 			};
 			field.push(result);
 		}
