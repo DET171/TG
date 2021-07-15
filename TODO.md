@@ -11,5 +11,5 @@
 | morse   | :white_check_mark: |
 | 64encode / 64decode   | :white_check_mark: |
 | choose   | :white_check_mark: |
-| github rewrite   | :x: |
+| github rewrite   | :white_check_mark: |
 | game category   | :x: |
