@@ -10,3 +10,5 @@
 | chat   | :white_check_mark: |
 | morse   | :white_check_mark: |
 | 64encode / 64decode   | :white_check_mark: |
+| choose   | :x: |
+| github rewrite   | :x: |
