@@ -1,5 +1,5 @@
 const { Command } = require('yuuko');
-module.exports = new Command('choose', (message, args, context) => {
+module.exports = new Command('choose', (message, args) => {
 	const arg = args.join(' ');
 	const choices = arg.split(';;');
 	const clength = choices.length;
