@@ -1,6 +1,4 @@
-# Security Policy
-
-## Supported Versions
+# TODO List
 
 | TO-DO Commands | Done?         |
 | ------- | ------------------ |
@@ -12,7 +10,6 @@
 | chat   | :white_check_mark: |
 | morse   | :white_check_mark: |
 | 64encode / 64decode   | :white_check_mark: |
-
-## Reporting a Vulnerability
-
-Report in [Issues](https://github.com/DET171/TG/issues) for now.
+| choose   | :white_check_mark: |
+| github rewrite   | :white_check_mark: |
+| game category   | :x: |

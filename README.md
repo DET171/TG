@@ -8,7 +8,7 @@
 [![](https://img.shields.io/codeclimate/issues/DET171/TG?style=flat-square&logo=github)](https://codeclimate.com/github/DET171/TG/issues)
 [![](https://img.shields.io/github/downloads/DET171/TG/total?style=flat-square&logo=github)](https://github.com/DET171/TG/)
 [![](https://img.shields.io/github/checks-status/DET171/TG/master?style=flat-square&logo=github)](https://github.com/DET171/TG/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&logo=github)](http://MIT.org/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&logo=github)](https://www.mit.edu/~amini/LICENSE.md)
   ## Description
 
   The bot is written using [Yuuko](https://github.com/eritbh/yuuko) and [Eris](https://github.com/abalabahaha/eris).
@@ -63,3 +63,6 @@
   ## Credits
 
   [@DET171](https://github.com/DET171)
+
+  ## Commit Activity
+  [![](https://img.shields.io/github/commit-activity/m/DET171/TG?style=for-the-badge)](https://github.com/DET171/TG/graphs/commit-activity)
