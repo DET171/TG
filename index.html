@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>DET171/TG</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css">
+    <style>
+      .markdown-body {
+		    box-sizing: border-box;
+		    min-width: 200px;
+		    max-width: 980px;
+		    margin: 0 auto;
+		    padding: 45px;
+	     }
+
+	    @media (max-width: 767px) {
+		   .markdown-body {
+			   padding: 15px;
+		   }
+	    }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+    <h1 id="a-simple-discord-bot">A Simple Discord Bot</h1>
+    <p><a href="https://github.com/DET171/TG/issues"><img alt="" src="https://img.shields.io/github/issues/DET171/TG?style=flat-square&amp;logo=github"></a>
+      <a href="https://github.com/DET171/TG/"><img alt="" src="https://img.shields.io/github/forks/DET171/TG?style=flat-square&amp;logo=github"></a>
+      <a href="https://codeclimate.com/github/DET171/TG"><img alt="" src="https://img.shields.io/codeclimate/maintainability/DET171/TG?style=flat-square&amp;logo=github"></a>
+      <a href="https://codeclimate.com/github/DET171/TG"><img alt="" src="https://img.shields.io/codeclimate/maintainability-percentage/DET171/TG?style=flat-square&amp;logo=github"></a>
+      <a href="https://github.com/DET171/TG/"><img alt="" src="https://img.shields.io/codeclimate/tech-debt/DET171/TG?style=flat-square&amp;logo=github"></a>
+      <a href="https://github.com/DET171/TG/graphs/contributors"><img alt="" src="https://img.shields.io/github/contributors/DET171/TG?style=flat-square&amp;logo=github"></a>
+      <a href="https://codeclimate.com/github/DET171/TG/issues"><img alt="" src="https://img.shields.io/codeclimate/issues/DET171/TG?style=flat-square&amp;logo=github"></a>
+      <a href="https://github.com/DET171/TG/"><img alt="" src="https://img.shields.io/github/downloads/DET171/TG/total?style=flat-square&amp;logo=github"></a>
+      <a href="https://github.com/DET171/TG/"><img alt="" src="https://img.shields.io/github/checks-status/DET171/TG/master?style=flat-square&amp;logo=github"></a>
+      <a href="https://www.mit.edu/~amini/LICENSE.md"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&amp;logo=github"></a>
+    </p>
+    <h2 id="description">Description</h2>
+    <p> The bot is written using <a href="https://github.com/eritbh/yuuko">Yuuko</a> and <a href="https://github.com/abalabahaha/eris">Eris</a>.</p>
+    <h2 id="table-of-contents">Table of Contents</h2>
+    <ul>
+      <li>
+        <p><a href="#description">Description</a></p>
+      </li>
+      <li>
+        <p><a href="#prerequisites">Prerequisites</a></p>
+      </li>
+      <li>
+        <p><a href="#installation">Install</a></p>
+      </li>
+      <li>
+        <p><a href="#usage-production">Usage (Production)</a></p>
+      </li>
+      <li>
+        <p><a href="#usage-development">Usage (Development)</a></p>
+      </li>
+      <li>
+        <p><a href="#bugs-and-issues">Bugs and Issues</a></p>
+      </li>
+      <li>
+        <p><a href="#pull-requests">Pull Requests</a></p>
+      </li>
+      <li>
+        <p><a href="#credits">Credits</a></p>
+      </li>
+      <li>
+        <p><a href="#license">License</a></p>
+        <h2 id="prerequisites">Prerequisites</h2>
+        <p>Node.js &gt;= <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">16.3.0</code><br>NPM &gt;= <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">7.19.0</code></p>
+        <h2 id="installation">Installation</h2>
+        <pre class="editor-colors lang-bash"><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">git</span> clone https://github.com/DET171/TG</span></div></pre>
+        <p>After that, rename <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">.example.env</code> to <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">.env</code>.
+          Fill in your bot token, bot prefix, and get the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">key</code> and <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">bid</code> at <a href="https://brainshop.ai/user/register">Brainshop.ai</a></p>
+        <h2 id="usage-production">Usage (Production)</h2>
+        <p>Install the dependencies:</p>
+        <pre class="editor-colors lang-bash"><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">npm</span> i <span class="syntax--entity syntax--other syntax--attribute-name">--production</span></span></div></pre>
+        <p>Start the project:</p>
+        <pre class="editor-colors lang-bash"><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">npm</span> run prod</span></div></pre>
+        <h2 id="usage-development">Usage (Development)</h2>
+        <p>Install the dependencies:</p>
+        <pre class="editor-colors lang-bash"><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">npm</span> i <span class="syntax--entity syntax--other syntax--attribute-name">--production=false</span> <span class="syntax--entity syntax--other syntax--attribute-name">--no-optional</span></span></div></pre>
+        <p>Start the project:</p>
+        <pre class="editor-colors lang-bash"><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">npm</span> run dev</span></div></pre>
+        <h2 id="bugs-and-issues">Bugs and Issues</h2>
+        <p>Go to <a href="https://github.com/DET171/TG/issues">https://github.com/DET171/TG/issues</a></p>
+        <h2 id="pull-requests">Pull Requests</h2>
+        <p>Go to <a href="https://github.com/DET171/TG/pulls">https://github.com/DET171/TG/pulls</a></p>
+        <h2 id="credits">Credits</h2>
+        <p><a href="https://github.com/DET171">@DET171</a></p>
+        <h2 id="commit-activity">Commit Activity</h2>
+        <p><a href="https://github.com/DET171/TG/graphs/commit-activity"><img alt="" src="https://img.shields.io/github/commit-activity/m/DET171/TG?style=for-the-badge"></a></p>
+      </li>
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+    </div>
+  </body>
+
+</html>
