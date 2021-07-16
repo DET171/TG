@@ -24,6 +24,7 @@
   - [Pull Requests](#pull-requests)
   - [Credits](#credits)
   - [License](#license)
+  - [Commands](#commands)
 
   ## Prerequisites
   Node.js >= `16.3.0`
@@ -66,3 +67,37 @@
 
   ## Commit Activity
   [![](https://img.shields.io/github/commit-activity/m/DET171/TG?style=for-the-badge)](https://github.com/DET171/TG/graphs/commit-activity)
+
+  # Commands
+
+  ## Categories
+
+  1. [General](#general)
+  2. [Bot related commands](#bot-related-commands)
+  3. [Fun](#fun)
+  4. [Information](#information)
+  5. [Utilities](#utilities)
+
+  ## General
+  1. `help` (ik it's outdated, just refer to the page you are now looking at)
+
+  ## Bot related commands
+  1. `bug`
+  2. `suggest`
+
+
+  ## Fun
+  1. `meme`
+  2. `roll`
+
+  ## Information
+  1. `guild`/`server`
+  2. `whois`/`member`
+
+  ## Utilities
+  1. `64encode`
+  2. `64decode`
+  3. `choose`
+  4. `github` *(A bit buggy, PRs are welcome)*
+  5. `morse`
+  6. `npmjs`
