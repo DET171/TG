@@ -5,7 +5,7 @@ module.exports = new Command('help', async (message, args, context) => {
 	context.client.createMessage(message.channel.id, {
 		embed: {
 			title: 'Help Menu',
-			description: 'Please refer to ',
+			description: 'Please refer to [https://det171.github.io/TG/#commands](https://det171.github.io/TG/#commands)',
 		},
 	});
 });
