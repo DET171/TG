@@ -1,7 +1,6 @@
 const { Client } = require('yuuko');
 const path = require('path');
 const dotenv = require('dotenv');
-const express = require('express');
 const got = require('got');
 var env = dotenv.config();
 env = process.env;
@@ -15,7 +14,8 @@ const bot = new Client({
 bot.extendContext({
 	placeholder: 'This is a placeholder',
 });
-
+bot.extendContext({
+});
 bot.editStatus('dnd');
 
 bot.on('error', (err) => {
@@ -55,14 +55,3 @@ module.exports = new Command('test', (message, args, context) => {
 
 });
 */
-
-const app = express();
-const port = process.env.PORT || 8080;
-
-// eslint-disable-next-line
-app.get('/', function(req, res) {
-	res.sendFile(path.join(__dirname, '/up.html'));
-});
-
-app.listen(port);
-console.log('Server started at http://localhost:' + port);
