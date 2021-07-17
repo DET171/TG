@@ -1,8 +1,8 @@
 const { EventListener } = require('yuuko');
 const express = require('express');
-module.exports = new EventListener('ready', (context) => {
-	console.log('Logged in as ' + context.client.user.username + '#' + context.client.user.discriminator);
-	console.log(`Bot ID: ${context.client.user.id}`);
+module.exports = new EventListener('ready', ({ client }) => {
+	console.log('Logged in as ' + client.user.username + '#' + client.user.discriminator);
+	console.log(`Bot ID: ${client.user.id}`);
 	var app = express();
 
 	// set the view engine to ejs
@@ -13,8 +13,9 @@ module.exports = new EventListener('ready', (context) => {
 	// index page
 	app.get('/', function(req, res) {
 		res.render('up', {
-			botUser: context.client.user.username + '#' + context.client.user.discriminator,
-			botID: context.client.user.id,
+			botUser: client.user.username + '#' + client.user.discriminator,
+			botID: client.user.id,
+			uptime: msToTime(client.uptime),
 		});
 	});
 
@@ -24,3 +25,15 @@ module.exports = new EventListener('ready', (context) => {
 	console.log(`Server is listening on port ${port}`);
 
 });
+function msToTime(duration) {
+	var milliseconds = parseInt((duration % 1000) / 100),
+		seconds = Math.floor((duration / 1000) % 60),
+		minutes = Math.floor((duration / (1000 * 60)) % 60),
+		hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+
+	hours = (hours < 10) ? '0' + hours : hours;
+	minutes = (minutes < 10) ? '0' + minutes : minutes;
+	seconds = (seconds < 10) ? '0' + seconds : seconds;
+
+	return hours + ':' + minutes + ':' + seconds + '.' + milliseconds;
+}
