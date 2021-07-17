@@ -9,13 +9,17 @@ module.exports = new EventListener('ready', ({ client }) => {
 	app.set('view engine', 'ejs');
 
 	// use res.render to load up an ejs view file
-
+	const guilds = client.guilds.map((guild) => `${guild}`).length;
+	const shards = client.shards.map((s) => `${s}`);
 	// index page
 	app.get('/', function(req, res) {
 		res.render('up', {
 			botUser: client.user.username + '#' + client.user.discriminator,
 			botID: client.user.id,
 			uptime: msToTime(client.uptime),
+			guilds: guilds,
+			gUrl: client.gatewayURL,
+			shards: shards,
 		});
 	});
 
