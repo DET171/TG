@@ -27,7 +27,7 @@
   - [Commands](#commands)
 
   ## Prerequisites
-  Node.js >= `16.3.0`
+  Node.js >= `16.3.0`   
   NPM >= `7.19.0`
 
   ## Installation
