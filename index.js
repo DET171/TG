@@ -27,7 +27,7 @@ bot.globalCommandRequirements = {
 };
 
 bot.on('messageCreate', async (message) => {
-	if (!message.guildID == undefined && message.author.id != bot.user.id) {
+	if (!message.guildID && message.author.id != bot.user.id) {
 		try {
 			const text = message.content.replace(/^<@!?[0-9]{1,20}> ?/i, '');
 			bot.sendChannelTyping(message.channel.id);
