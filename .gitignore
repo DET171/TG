@@ -1,9 +1,3 @@
 node_modules
 
 .env
-
-json.sqlite
-
-list.json
-
-process.env
