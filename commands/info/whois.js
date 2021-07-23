@@ -1,13 +1,13 @@
 const { Command } = require('yuuko');
 const moment = require('moment');
 const { today } = require('../../utils.js');
-module.exports = new Command(['whois', 'member'], (message, args, context) => { // eslint-disable-line no-unused-vars
+module.exports = new Command(['whois', 'member'], async (message, args, context) => { // eslint-disable-line no-unused-vars
 	if (!args[0]) {
 		return message.channel.createMessage(`${message.author.mention}, apologies! Please specify a particular member!`);
 	}
 	const user = message.mentions[0];
 	const guild = message.channel.guild;
-	const member = guild.members.get(user.id);
+	const member = await guild.members.get(user.id);
 	message.channel.createMessage({
 		embed: {
 			title: `User information for ${user.username}#${user.discriminator}`,
