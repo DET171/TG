@@ -30,7 +30,7 @@
   "homepage": "https://github.com/DET171/TG#readme",
   "description": "",
   "devDependencies": {
-    "eslint": "^7.30.0",
+    "eslint": "^8.6.0",
     "nodemon": "^2.0.12"
   },
   "optionalDependencies": {
